@@ -13,14 +13,61 @@
                 <img src="odin-logo.png" alt="odin logo">
                 <h1>ODIN</h1>
             </div>
+
             <p class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
             </p>
         </div>
 
         <div class="content">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i>.</p>
-            <p>You <i>know</i> you want to.</p>
-            <form action="backend-server" method="post"></form>
+            <div class="text-stuff">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+                <p>You <i>know</i> you want to.</p>
+            </div>
+
+            <form action="backend-server" method="post">
+
+                <div class="form-stuff">
+                    <legend>Let's do this!</legend>
+                    <div class="name">
+                        <div class="first-name">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </div>
+                        <div class="last-name">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="user_email">
+                            <label for="user_email">EMAIL</label>
+                            <input type="email" name="user_email" id="user_email">
+                        </div>
+                        <div class="user_phonenumber">
+                            <label for="user_phonenumber">PHONE NUMBER</label>
+                            <input type="tel" pattern="[0-9]{10}" name="user_phonenumber" id="user_phonenumber">
+                        </div>
+                    </div>
+                    
+                    <div class="password">
+                        <user_password>
+                            <label for="user_password">PASSWORD</label>
+                            <input type="password" name="user_password" id="user_password">
+                        </user_password>
+                    
+                        <div class="confirm_password">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_password" id="confirm_password">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit">Create Account</button>
+                </div>
+
+                <p>Already have an account? <a href="https://support.google.com/mail/answer/56256?hl=en">Log in</a></p>
+            </form>
         </div>
     </div>
 </body>
