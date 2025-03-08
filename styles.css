@@ -68,7 +68,7 @@
 
 
 .content {
-    margin-top: 7.5%;
+    margin-top: 4.5%;
 
 }
 
@@ -90,13 +90,17 @@
     padding-left: var(--text-stuff-margin);
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-top: 5vh;
     box-shadow: 3px 3px 2px rgb(0,0,0,0.2);
+    /* height: 40vh;
+    width: 100%; */
 }
 
 legend {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.2em;
     color: rgb(0,0,75);
+    margin-bottom: 20px;
 }
 
 button {
@@ -130,6 +134,34 @@ form > p > a:visited {
     color: #3e5230; /* Even darker green when clicked */
 }
 
-.first_name {
+label {
     display: block;
+    font-size: 0.8rem;
+    color: rgb(25,25,25);
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-row.name {
+    margin-bottom: 2%;
+}
+
+.form-row.contact {
+    margin-bottom: 2%;
+}
+
+.form-row > *:first-child{
+    margin-right: 12%;
+}
+
+input:invalid {
+    border: 2px solid rgb(220,0,0);
+}
+
+input:focus {
+    border: 2px solid rgb(0,0,220);
+    outline: none;
+    box-shadow: 3px 3px 8px 8px rgb(100,100,100) ;
 }
